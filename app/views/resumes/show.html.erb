@@ -1,3 +1,8 @@
 <h1>User resume here</h1>
 
-<h1><%= @text %></h1>
+<% @text.each do |student, value| %>
+<ul>
+  <li><%= student %></li>
+  <li><%= value %></li>
+</ul>
+<% end %>
